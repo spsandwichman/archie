@@ -1,26 +1,24 @@
 body {
-  color: white;
-  background-color: #202124;
+  color: var(--gruv-fg0);
+  background-color: var(--bg);
 }
 
 ::-moz-selection {
-  background: blue;
-  color: #fff;
-  text-shadow: none;
+  background: var(--maincolor);
+  color: var(--bg);
 }
 
 ::selection {
-  background: red;
-  color: #fff;
-  text-shadow: none;
+  background: var(--maincolor);
+  color: var(--bg);
 }
 
 hr {
-  border-top: 3px dotted blue;
+  border-top: 3px dotted var(--maincolor);
 }
 code {
-  background-color: lightblue;
-  color: black;
+  background-color: #282828;
+  color: var(--gruv-fg);
   text-decoration: bold;
   padding: 0.1em 0.2em;
 }
@@ -31,7 +29,7 @@ pre {
   padding: 1em;
 }
 blockquote {
-  border-color: blue;
+  border-color: var(--maincolor);
 }
 
 h1,
@@ -40,40 +38,29 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ddd;
-}
-h1::before {
-  color: var(--darkMaincolor);
-  content: "# ";
-}
-h2::before {
-  color: var(--darkMaincolor);
-  content: "## ";
-}
-h3::before {
-  color: var(--darkMaincolor);
-  content: "### ";
-}
-h4::before {
-  color: var(--darkMaincolor);
-  content: "#### ";
-}
-h5::before {
-  color: var(--darkMaincolor);
-  content: "##### ";
-}
-h6::before {
-  color: var(--darkMaincolor);
-  content: "###### ";
+  color: var(--gruv-fg0);
 }
 
+article_title {
+  color: var(--gruv-fg0);
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+h1::before { color: var(--maincolor); content: '# '; }
+h2::before { color: var(--maincolor); content: '## '; }
+h3::before { color: var(--maincolor); content: '### '; }
+h4::before { color: var(--maincolor); content: '#### '; }
+h5::before { color: var(--maincolor); content: '##### '; }
+h6::before { color: var(--maincolor); content: '###### '; }
+
 a {
-  border-bottom: 3px solid var(--darkMaincolor);
-  color: inherit;
+  border-bottom: 3px solid var(--maincolor);
+
 }
 a:hover {
-  background-color: var(--darkMaincolor);
-  color: black;
+  background-color: var(--maincolor);
+  color: var(--bg);
 }
 
 .site-description a {
@@ -84,10 +71,10 @@ a:hover {
 }
 
 .tags a {
-  border-bottom: 3px solid var(--darkMaincolor);
+  border-bottom: 3px solid var(--maincolor);
 }
 .tags a:hover {
-  background-color: var(--darkMaincolor);
+  background-color: var(--maincolor);
   color: black;
 }
 
@@ -108,8 +95,8 @@ a:hover {
   color: black;
 }
 .draft-label {
-  color: var(--darkMaincolor);
-  background-color: blue;
+  color: var(--maincolor);
+  background-color: var(--bg);
 }
 .highlight pre code[class=language-javaScript]::before,
 .highlight pre code[class="language-js"]::before {

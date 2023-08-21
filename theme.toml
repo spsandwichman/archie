@@ -10,6 +10,10 @@ tags = ["blog","simple","responsive","minimal","tags","personal","clean","shortc
 features = ["blog", "Clean and minimal", "Responsive", "Syntax highlighting",]
 min_version = "0.41"
 
-[author]
+[original]
   name = "Athul Cyriac Ajay"
   homepage = "https://github.com/athul"
+
+[author]
+  name = "Seth Poulsen"
+  homepage = "https://github.com/spsandwichman"

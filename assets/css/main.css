@@ -1,14 +1,19 @@
 /* Markdown */
 :root{
---maincolor: red;
---bordercl:rebeccapurple;
+--gruv-fg0: #fbf1c7;
+--gruv-fg: #ebdbb2;
+--gruv-bright-yellow: #fabd2f;
+
+
+--bg: #1d2021;
+--maincolor: #fb4934;
+--bordercl:#fb4934;
 --callouctcolor:dodgerblue;
 --hovercolor:navy;
---darkMaincolor: #50fa7b;
 }
 html {
-  color: #232333;
-  font-family: 'Roboto Mono', monospace;
+  color: var(--maincolor);
+  font-family: 'Fira Code', monospace;
   font-size: 15px;
   line-height: 1.6em;
 }
@@ -26,7 +31,7 @@ body{
 }
 
 p {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Code', sans-serif;
   line-height: 1.5;
 }
 
@@ -165,7 +170,7 @@ h6::before { color: var(--maincolor); content: '###### '; }
 footer {
   display: flex;
   align-items: center;
-  border-top: 0.4rem dotted var(--bordercl);
+  border-top: 3px solid var(--bordercl);
   padding: 2rem 0rem;
   margin-top: 2rem;
 }
